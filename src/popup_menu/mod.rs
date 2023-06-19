@@ -60,7 +60,7 @@ impl State {
         list_view.add_css_class("nvim-popupmenu-list");
 
         let css_provider = gtk::CssProvider::new();
-        gtk::StyleContext::add_provider_for_display(
+        gtk::style_context_add_provider_for_display(
             &list_view.display(),
             &css_provider,
             gtk::STYLE_PROVIDER_PRIORITY_APPLICATION,

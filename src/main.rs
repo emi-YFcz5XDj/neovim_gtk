@@ -319,7 +319,7 @@ fn main() {
     // Setup our global style provider
     let css_provider = gtk::CssProvider::new();
     css_provider.load_from_data(include_str!("style.css"));
-    gtk::StyleContext::add_provider_for_display(
+    gtk::style_context_add_provider_for_display(
         gdk::Display::default()
             .as_ref()
             .expect("Cannot find default GDK Display"),
