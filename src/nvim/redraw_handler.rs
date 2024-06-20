@@ -345,10 +345,24 @@ pub fn call_gui_request(
                     let t = glib::MainContext::default()
                         .block_on(clipboard.read_text_future())
                         .unwrap_or(None)
-                        .unwrap_or_else(|| "".into());
+                        .unwrap_or_else(|| "".into())
+                        .to_string()
+                        .replace("\r", "\n");
 
+                    //Ok(Value::Array(vec![t.split('\n').to_owned()]))
+
+                    /* Hello darkness my old friend
+                     * no.
+                     * I don't know why on earth we have suddenly gotten '\r' instead of '\n' in
+                     * pastes. But right now I've got more important stuff going in my life.
+                     * it literally happened one day
+                     * if you know, please contact lyude for a $0 reward
+                     */
                     Ok(Value::Array(
-                        t.split('\n').map(|s| s.into()).collect::<Vec<Value>>(),
+                        t.replace('\r', "\n")
+                            .split('\n')
+                            .map(|s| s.into())
+                            .collect::<Vec<Value>>(),
                     ))
                 }
                 opt => Err(format!("Unknown option: {opt}").into()),
