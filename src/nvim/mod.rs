@@ -518,7 +518,7 @@ pub fn start<'a>(
         .arg("--cmd")
         .arg("let g:GtkGuiLoaded = 1")
         .arg("--cmd")
-        .arg(&format!(
+        .arg(format!(
             "let &rtp.=',{}'",
             env::var("NVIM_GTK_RUNTIME_PATH").unwrap_or_else(|_| env!("RUNTIME_PATH").into())
         ))
