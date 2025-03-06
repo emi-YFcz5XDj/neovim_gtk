@@ -12,3 +12,5 @@ cached-container-images.tar
 .flatpak-builder
 
 # vim: tw=100 colorcolumn=100
+
+install/
