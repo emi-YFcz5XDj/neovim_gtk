@@ -28,5 +28,5 @@ modules:
   - type: archive
     #url: https://github.com/Lyude/neovim-gtk/archive/refs/tags/v1.0.4.tar.gz
     #sha256: d0d0dacfbfca16168361f517dee20259785379910173cc33d7d48bd301d30f18
-    url: https://github.com/Lyude/neovim-gtk/archive/f484da679a19de035e4fee2b48c3de68fc4915d4.tar.gz
-    sha256: 94456e8bccc17394cc8141c963070bbb56acddb1d7b00e2030f7d0fd4956ac20
+    url: https://github.com/emi-YFcz5XDj/neovim_gtk/archive/c951345161889665e107635fa04b45ed98aaebc6.tar.gz
+    sha256: 26db415835e11bff865d04ce50dddd85090ad4c5a029ac72607d0719358055aa
