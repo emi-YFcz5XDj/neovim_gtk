@@ -2,9 +2,13 @@
 <!-- Following https://www.freedesktop.org/software/appstream/docs/chap-CatalogData.html, but only component allowed? Not <components>? -->
 <component type="desktop-application">
   <id>com.github.Lyude.neovim-gtk</id>
-  <name>neovim-gtk</name>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  <name>Neovim GTK</name>
   <summary>GTK UI for neovim written in rust using gtk-rs bindings</summary>
-  <developer_name>Lyude Paul, @daa84</developer_name>
+  <developer id="net.lyude">
+    <name>Lyude Paul, @daa84</name>
+  </developer>
   <description>
    <p>GTK ui for neovim written in rust using gtk-rs bindings. With ligatures support. This project began as a fork of @daa84's neovim-gtk.</p>
     <p>There are a very large number of improvements from @daa84's version, including:
@@ -15,15 +19,19 @@
       </ul> 
     </p>
   </description>
-  <metadata_license>GPL-3.0</metadata_license>
+  <launchable type="desktop-id">com.github.Lyude.neovim-gtk.desktop</launchable>
   <keywords>
     <keyword>neovim</keyword>
+    <keyword>nvim</keyword>
+    <keyword>vi</keyword>
     <keyword>vim</keyword>
     <keyword>editor</keyword>
   </keywords>
   <categories>
-    <category>network</category>
-    <category>web</category>
+    <category>GTK</category>
+    <category>Utility</category>
+    <category>Development</category>
+    <category>TextEditor</category>
   </categories>
   <url type="homepage">https://github.com/Lyude/neovim-gtk</url>
   <url type="bugtracker">https://github.com/Lyude/neovim-gtk/issues/new</url>
